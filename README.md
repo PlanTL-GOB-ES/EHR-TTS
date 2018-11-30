@@ -23,7 +23,7 @@ Covered languages: Spanish.
 ## Prerequisites
 -------------
 
-This software requires to HeidelTime. The grammar has been tested with version 2.2.1 and it 
+This software requires HeidelTime. The grammar has been tested with version 2.2.1 and it 
 should work with more recent versions. HeidelTime is licensed  under the GNU General Public 
 License (Version 3). You can download it from the following website: 
 
