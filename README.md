@@ -30,6 +30,10 @@ should work with recent versions. HeidelTime is licensed  under the GNU General 
 https://github.com/HeidelTime/heideltime
 
 
+Please, note that HeidelTime is an UIMA [2] component. It requires UIMA, and sentence, token, 
+and part-of speech annotations (HeidelTime includes a wrapper of TreeTagger [3] for UIMA).
+
+
 ## Directory structure
 -------------------
 
@@ -113,3 +117,7 @@ See LICENSE file.
 ## References
 
 [1] Strötgen, Gertz: HeidelTime: High Qualitiy Rule-based Extraction and Normalization of Temporal Expressions. SemEval'10. [PDF](http://www.newdesign.aclweb.org/anthology/S/S10/S10-1071.pdf)  [Bibtex](http://dbs.ifi.uni-heidelberg.de/fileadmin/Team/jannik/publications/stroetgen_bib.html#SEMEVAL2010)
+
+[2] UIMA: https://uima.apache.org/
+
+[3] TreeTagger: http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/
