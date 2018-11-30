@@ -35,13 +35,17 @@ https://github.com/HeidelTime/heideltime
 
 <pre>
 normalization/
-This folder contains the files for normalized expressions.
+This folder contains the files for normalized expressions. These files contain normalized values 
+of expressions included in the repattern folder. They correspond to the ISO format for temporal 
+information.
 
 repattern/
-This folder contains the files for expression patterns.
+This folder contains the files for expression patterns. Patterns are used to create regular 
+expressions, which can be accessed by every rule. This allows to use category names 
+(e.g., "month") instead of listing all items every time the category is needed in a rule.
 
 rules/
-This folder contains the rules for the temporal expressions.
+This folder contains the rules to identify and normalize temporal expressions.
 </pre> 
 
 
@@ -49,8 +53,46 @@ This folder contains the rules for the temporal expressions.
 -----
 
 Install and test your HeidelTime installation following the instructions given by HeidelTime
-developers. Copy the "spanish_ehr/" directory into the "resources/" directory of HeidelTime and
-select "spanish_ehr" at runtime.
+developers. Copy the "spanish_ehr/" directory into the "resources/" directory of HeidelTime. 
+Then run UIMA Collection Processing Engine:
+
+<pre>
+$ cpeGui.sh
+</pre>
+
+The create a create a workflow with the following components:
+
+<pre>
+Collection reader:
+  - UIMA's file system collection reader:
+    $UIMA_HOME/examples/descriptors/collection_reader/FileSystemCollectionReader.xml
+    set "Input directory" to $HEIDELTIME_HOME/doc/
+Analysis Engines
+  - TreeTaggerWrapper located at
+    HEIDELTIME_HOME/desc/annotator/TreeTaggerWrapper.xml
+    set "Language" to "english"
+    set "Annotate_tokens" to "true"
+    set "Annotate_partofspeech" to "true"
+    set "Annotate_sentences" to "true"
+    set "Improvegermansentences" to "false"
+  - HeidelTime located at
+    HEIDELTIME_HOME/desc/annotator/HeidelTime.xml
+    set "Date" to "true"
+    set "Time" to "true"
+    set "Duration" to "true"
+    set "Set" to "true"
+    set "Temponym" to "false"
+    set "Language" to "english"
+    set "Type" to "narratives"
+CAS Consumer
+  - UIMA's XMI Writer CAS Consumer located at
+    $UIMA_HOME/examples/descriptors/cas_consumer/XmiWriterCasConsumer.xml
+    set "Output Directory" to OUTPUT
+</pre>
+
+
+Save the workflow, set "spanish_ehr" as "language" and run the workflow.
+
 
 
 ## Contact
