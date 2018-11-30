@@ -54,13 +54,17 @@ This folder contains the rules to identify and normalize temporal expressions.
 
 Install and test your HeidelTime installation following the instructions given by HeidelTime
 developers. Copy the "spanish_ehr/" directory into the "resources/" directory of HeidelTime. 
-Then run UIMA Collection Processing Engine:
+
+
+## Examples
+
+Run UIMA Collection Processing Engine:
 
 <pre>
 $ cpeGui.sh
 </pre>
 
-The create a create a workflow with the following components:
+Create a workflow with the following components:
 
 <pre>
 Collection reader:
