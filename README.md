@@ -9,28 +9,24 @@
 ------------
 
 This grammar is an adaptation to the medical domain of the cross-domain grammar available
-in HeidelTime [1] (https://github.com/HeidelTime/heideltime). This adapted grammar can be used 
-to detect temporal expressions in real clinical data.
+in HeidelTime [1] (https://github.com/HeidelTime/heideltime), a multilingual, domain-sensitive 
+temporal tagger developed at the Database Systems Research Group at Heidelberg University. 
+HeidelTime extracts temporal expressions from documents and normalizes them according to the TIMEX3 
+annotation standard. It is available as UIMA annotator and as standalone version. 
 
-HeidelTime is a multilingual, domain-sensitive temporal tagger developed at the Database 
-Systems Research Group at Heidelberg University. It extracts temporal expressions from 
-documents and normalizes them according to the TIMEX3 annotation standard. HeidelTime is 
-available as UIMA annotator and as standalone version. 
-
-Covered languages: Spanish.
+This adapted grammar can be used to detect temporal expressions in real clinical data in Spanish.
 
 
 ## Prerequisites
 -------------
 
-This software requires HeidelTime. The grammar has been tested with version 2.2.1 and it 
-should work with more recent versions. HeidelTime is licensed  under the GNU General Public 
+This software requires HeidelTime installed on your system. The grammar has been tested with version 
+2.2.1 and it should work with more recent versions. HeidelTime is licensed  under the GNU General Public 
 License (Version 3). You can download it from the following website: 
-
 https://github.com/HeidelTime/heideltime
 
 
-Please, note that HeidelTime is an UIMA [2] component. It requires UIMA, and sentence, token, 
+Please, note that HeidelTime is an UIMA [2] component. It requires UIMA and sentence, token, 
 and part-of speech annotations (HeidelTime includes a wrapper of TreeTagger [3] for UIMA).
 
 
