@@ -24,8 +24,8 @@ Covered languages: Spanish.
 -------------
 
 This software requires to HeidelTime. The grammar has been tested with version 2.2.1 and it 
-should work with recent versions. HeidelTime is licensed  under the GNU General Public License 
-(Version 3). You can download it from the following website: 
+should work with more recent versions. HeidelTime is licensed  under the GNU General Public 
+License (Version 3). You can download it from the following website: 
 
 https://github.com/HeidelTime/heideltime
 
