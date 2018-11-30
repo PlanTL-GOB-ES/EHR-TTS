@@ -9,7 +9,7 @@
 ------------
 
 This grammar is an adaptation to the medical domain of the cross-domain grammar available
-in HeidelTime (https://github.com/HeidelTime/heideltime). This adapted grammar can be used 
+in HeidelTime [1] (https://github.com/HeidelTime/heideltime). This adapted grammar can be used 
 to detect temporal expressions in real clinical data.
 
 HeidelTime is a multilingual, domain-sensitive temporal tagger developed at the Database 
@@ -23,7 +23,11 @@ Covered languages: Spanish.
 ## Prerequisites
 -------------
 
-This software requires to HeidelTime.
+This software requires to HeidelTime. The grammar has been tested with version 2.2.1 and it 
+should work with recent versions. HeidelTIme is licensed  under the GNU General Public License 
+(Version 3). You can download it from the following website: 
+
+https://github.com/HeidelTime/heideltime
 
 
 ## Directory structure
@@ -44,7 +48,9 @@ This folder contains the rules for the temporal expressions.
 ## Usage
 -----
 
-Copy the "spanish_ehr/" directory into the "resources/" directory of HeidelTime.
+Install and test your HeidelTime installation following the instructions given by HeidelTime
+developers. Copy the "spanish_ehr/" directory into the "resources/" directory of HeidelTime and
+select "spanish_ehr" at runtime.
 
 
 ## Contact
@@ -57,3 +63,7 @@ Aitor Gonzalez-Agirre (aitor.gonzalez@bsc.es)
 -------
 
 See LICENSE file.
+
+## References
+
+[1] Strötgen, Gertz: HeidelTime: High Qualitiy Rule-based Extraction and Normalization of Temporal Expressions. SemEval'10. [PDF](http://www.newdesign.aclweb.org/anthology/S/S10/S10-1071.pdf)  [Bibtex](http://dbs.ifi.uni-heidelberg.de/fileadmin/Team/jannik/publications/stroetgen_bib.html#SEMEVAL2010)
