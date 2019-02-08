@@ -1,5 +1,10 @@
 # EHR-TTS: Electronic Health Record (EHR) Temporal Tagger for Spanish
 
+## Digital Object Identifier (DOI)
+
+https://doi.org/10.5281/zenodo.2560356
+
+
 
 ## Introduction
 ------------
