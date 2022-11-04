@@ -111,6 +111,8 @@ Aitor Gonzalez-Agirre (aitor.gonzalez@bsc.es)
 
 See LICENSE file.
 
+Copyright (c) 2017-2018 Secretaría de Estado para el Avance Digital (SEAD)
+
 ## References
 
 [1] Strötgen, Gertz: HeidelTime: High Qualitiy Rule-based Extraction and Normalization of Temporal Expressions. SemEval'10. [PDF](http://www.newdesign.aclweb.org/anthology/S/S10/S10-1071.pdf)  [Bibtex](http://dbs.ifi.uni-heidelberg.de/fileadmin/Team/jannik/publications/stroetgen_bib.html#SEMEVAL2010)
